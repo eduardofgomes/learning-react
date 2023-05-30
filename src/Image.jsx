@@ -1,21 +1,14 @@
 import {useState} from 'react'
 
-export function Image() {
-    const [img, setImg] = useState("https://picsum.photos/600")
-    const changeImg = () => {  
-        setImg("https://picsum.photos/400")
+export function Image(props) {
+    const [count, setcount] = useState(0)
+    const changeCount = () => {  
+        setcount(count + 1)
     }
-    
     return (
         <>
-            <img src={img} className="img-test" alt="" />
-            <Button className="button-img" onClick={changeImg} text="TeSt"></Button>
+            <p className="count-test" alt="" />
+            <button className="button-count" onClick={changeCount}>Clicked {count} times</button>
         </>
     )
-}
-
-const Button = (props) =>{
-    const insertedText = props.text
-    const upperText = insertedText.toUpperCase()
-    return <button>{upperText}</button>
 }
