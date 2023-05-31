@@ -1,10 +1,10 @@
 import './App.css'
-import {Image} from './Image.jsx'
+import List from './components/List.jsx'
 
 export default function App() {
   return (
     <>
-      <Image />
+      <List />
     </>
   )
 }
