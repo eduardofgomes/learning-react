@@ -1,5 +1,5 @@
 const List = () => {
-    const superheroes = [
+    let superHeroes = [
         'Batman',
         'Superman',
         'Flash'
@@ -7,8 +7,9 @@ const List = () => {
     return (
         <>
             <h1>Super heroes</h1>
+            {superHeroes.length === 0 && <p>No super hero found</p>}
             <ul className="list">
-                {superheroes.map(hero => <li key={hero}>{hero}</li>)}
+                {superHeroes.map(hero => <li key={hero}>{hero}</li>)}
             </ul>
         </>
     )
