@@ -1,10 +1,10 @@
 import './App.css'
-import BookList from './components/BookList'
+import Modal from './components/modal.jsx'
 
 export default function App() {
   return (
     <>
-      <BookList />
+      <Modal />
     </>
   )
 }
