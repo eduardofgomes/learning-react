@@ -1,10 +1,10 @@
 import './App.css'
-import List from './components/List.jsx'
+import BookList from './components/BookList'
 
 export default function App() {
   return (
     <>
-      <List />
+      <BookList />
     </>
   )
 }
